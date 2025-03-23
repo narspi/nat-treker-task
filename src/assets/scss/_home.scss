@@ -1,0 +1,38 @@
+@use 'base';
+
+.home {
+  flex-grow: 1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1;
+  }
+
+  &__filter {
+    list-style: none;
+    padding: 16px 0;
+    margin: 0 0 40px 0;
+    display: flex;
+    gap: 32px;
+    border-bottom: 1px solid base.$movie-decor-bg;
+  }
+
+  &__check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__check-text {
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0px;
+    color: base.$movie-decor-bg;
+  }
+}

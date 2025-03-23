@@ -1,0 +1,17 @@
+@use 'base';
+
+.header {
+  padding: 36px 0 16px;
+  background-color: base.$header-bg;
+  color: base.$header-color;
+  text-align: center;
+
+  &__logo {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: 10px;
+    margin: 0;
+  }
+}

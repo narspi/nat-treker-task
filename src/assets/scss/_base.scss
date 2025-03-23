@@ -1,0 +1,55 @@
+$main-bg: #363232;
+$main-text: #fff;
+$header-bg: #fa2828fa;
+$header-color: #000;
+$movie-bg: #4d4747;
+$movie-decor-bg: #c4c4c4;
+$movie-tags-color: #988f8f;
+$movie-back-color: #ff5252;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $main-bg;
+  color: $main-text;
+}
+
+#app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  width: 100%;
+  max-width: 1430px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+.preloader {
+  margin: auto;
+  &__spin {
+    animation: spin 1200ms ease-out infinite;
+    transform-origin: center;
+
+    &--faster {
+      animation: spin 1200ms ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
