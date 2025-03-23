@@ -130,3 +130,28 @@
     letter-spacing: 0;
   }
 }
+
+@media (max-width: 900px) {
+  .movies {
+    &__item-duration {
+      position: relative;
+      top: 0;
+      align-self: start;
+      width: fit-content;
+      margin-top: 15px;
+      margin-left: auto;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .movies {
+    &__item {
+      flex-direction: column;
+    }
+
+    &__item-decor {
+      width: 100%;
+    }
+  }
+}

@@ -36,3 +36,13 @@
     color: base.$movie-decor-bg;
   }
 }
+
+@media (max-width: 600px) {
+  .home {
+    &__filter {
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}
